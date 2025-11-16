@@ -186,13 +186,19 @@ img {
   margin: 40px 0 80px;
 }
 
-.feature-card {
+.feature-card { 
   background: var(--bg-white);
+  
   border-radius: 8px;
   padding: 25px;
   width: 250px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  /* box-shadow: 20px 20px 20px rgba(0,0,0,0.08); */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0.12,0,0,0.2);
 }
 
 .feature-card h4 {
@@ -205,12 +211,19 @@ img {
   font-size: 14px;
   line-height: 1.5;
 }
+.feature-card img {
+  width: 65px;
+  height: 56px;
+  position: relative;
+  left: 90px;
+}
 .two-col,
 .two-col-alt {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 60px 100px;
+  gap: 30px;
   background: var(--bg-white);
 }
 
@@ -220,6 +233,7 @@ img {
 
 .article {
   max-width: 480px;
+  ;
 }
 
 .article-title {
@@ -308,8 +322,21 @@ color: var(--accent);
 
 .testimonial-name {
   font-weight: 700;
-  color: var(--text-dark);
+  color: var(--accent);
   margin-top: 10px;
+}
+.stars {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+}
+.all-customers {
+  color: var(--accent);
+ margin-left: auto;
+ text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 .blog-row {
